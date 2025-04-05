@@ -1,0 +1,108 @@
+.products{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.products .Title {
+
+    background-color: #C9A227;
+    height: 70px;
+    border-radius: 10px;
+    margin-left: 15%;
+    padding: 50px;
+    /* padding-right: 200px; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 10px;
+}
+
+.icon {
+    background: url('../../../assets/Icons/church-icon.png') no-repeat center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.card-container {
+    /* font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row; */
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 23px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* max-width: 600px; */
+    width: 32%;
+  }
+
+  .card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    direction: rtl;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+  }
+
+  .price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .price-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dashed #ccc;
+    color: #444;
+  }
+
+  .card-image {
+    width: 220px;
+    height: auto;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      flex-direction: column;
+    }
+
+    .card-image {
+      width: 100%;
+      height: 180px;
+    }
+  }

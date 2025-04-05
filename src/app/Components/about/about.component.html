@@ -1,0 +1,22 @@
+<div class="about">
+    <div class="Title">
+        <h2>عن الدير</h2>
+        <i class="icon"></i>
+    </div>
+  <div class="slider-container">
+    <!-- Slider images -->
+    <div class="slider-images" [style.transform]="'translateX(' + (-this.currentIndex * 100) + '%)'">
+      <img *ngFor="let image of images" [src]="image" alt="Slider Image">
+    </div>
+  
+    <!-- Circle navigation buttons -->
+    <div class="dots-container">
+      <span *ngFor="let image of images; let index = index"
+        class="dot" 
+        [ngClass]="{ 'active': index === currentIndex }" 
+        (click)="goToSlide(index)">
+      </span>
+    </div>
+  </div>
+  
+</div>

@@ -1,0 +1,87 @@
+.media{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.media .Title {
+
+    background-color: #C9A227;
+    height: 70px;
+    border-radius: 10px;
+    margin-left: 15%;
+    padding: 50px;
+    /* padding-right: 200px; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 10px;
+}
+
+.icon {
+    background: url('../../../assets/Icons/church-icon.png') no-repeat center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.image-row {
+    display: flex;
+    gap: 15px; /* spacing between images */
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .image-wrapper {
+    position: relative;
+    width: 300px;  /* Adjust based on image size and spacing */
+    height: 150px;
+    margin: 50px auto;
+  }
+
+  .image-wrapper img {
+    position: absolute;
+    width: 150px;
+    /* transform: skew(-10deg); */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    height: 150px;
+  }
+
+  /* Position each image slightly offset */
+  .img1 { left: 0; top: 0; z-index: 4; }
+  .img2 { left: 0px; top: 0px; z-index: 3; transform: rotate(-4deg) ;transition: transform 0.3s;}
+  .img3 { left: 0px; top: 0px; z-index: 2; transform:rotate(-7deg);transition: transform 0.3s;}
+  .img4 { left: 0px; top: 0px; z-index: 1; transform:rotate(-10deg);transition: transform 0.3s;}
+
+  /* Optional hover effect */
+  .image-wrapper .img1:hover {
+    transform: skew(3deg) scale(1.05);
+    z-index: 10;
+  }
+  .card-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* padding: 30px; */
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    /* gap: 50px; */
+    border: none;
+  }
+
+  .card {
+    /* background: #fff; */
+border: none;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    width: 350px;
+    /* transition: transform 0.3s ease; */
+    /* height: 200px; */
+  }
+  .content{
+    direction: rtl;
+    margin-right: 60%;
+  }

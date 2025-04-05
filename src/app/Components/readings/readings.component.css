@@ -1,0 +1,32 @@
+.readings{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.readings .Title {
+
+    background-color: #C9A227;
+    height: 70px;
+    border-radius: 10px;
+    margin-left: 15%;
+    padding: 50px;
+    /* padding-right: 200px; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 10px;
+}
+
+.icon {
+    background: url('../../../assets/Icons/church-icon.png') no-repeat center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.container{
+    height: 85vh;
+    width: 100%;
+    background-color: #f0f2f5;
+}
